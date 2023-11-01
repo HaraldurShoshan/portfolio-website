@@ -28,14 +28,14 @@ function renderSkillLevels(skillLevel: number) {
 				// return your JSX for each skill level here
 				<div
 					key={i}
-					className="bg-gray-200/30 h-2 w-2 rounded-lg border border-gray-200/30"
+					className="bg-black/20 border-black/20 h-2 w-2 rounded-lg border dark:border-gray-200/30 dark:bg-gray-200/30"
 				></div>,
 			);
 		} else {
 			content.push(
 				<div
 					key={i}
-					className="h-2 w-2  rounded-lg border border-gray-200/30"
+					className="border-black/20 h-2 w-2  rounded-lg border dark:border-gray-200/30"
 				></div>,
 			);
 		}

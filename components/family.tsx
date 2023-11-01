@@ -9,57 +9,6 @@ import fam3 from '@/public/fam3.jpg';
 import mikaelHinrik from '@/public/mikael_hinrik.jpg';
 import mikaelHinrik2 from '@/public/mikaelhinrik2.jpg';
 
-const pic1 = {
-	initial: {
-		opacity: 0,
-		y: 0,
-		x: -500,
-	},
-	animate: {
-		opacity: 1,
-		y: 0,
-		x: 0,
-		transition: {
-			delay: 0,
-			duration: 0.3,
-		},
-	},
-};
-
-const pic2 = {
-	initial: {
-		opacity: 0,
-		y: 0,
-		x: -800,
-	},
-	animate: {
-		opacity: 1,
-		y: 0,
-		x: 0,
-		transition: {
-			delay: 0.275,
-			duration: 0.3,
-		},
-	},
-};
-
-const pic3 = {
-	initial: {
-		opacity: 0,
-		y: 0,
-		x: 1000,
-	},
-	animate: {
-		opacity: 1,
-		y: 0,
-		x: 0,
-		transition: {
-			delay: 0.375,
-			duration: 0.3,
-		},
-	},
-};
-
 export default function Family() {
 	const { ref } = useSectionInView('Family', 1);
 

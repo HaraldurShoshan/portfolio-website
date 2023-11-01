@@ -35,11 +35,11 @@ export default function Intro() {
 						<Image
 							src={portfolioImage}
 							alt="image_portfolio"
-							className="h-24 w-24 rounded-full
-                    object-cover border-[0.35rem] border-white shadow-xl"
+							className="h-36 w-36 rounded-full
+                    object-cover border-[0.15rem] border-white shadow-2xl"
 						/>
 					</motion.div>
-					<motion.span
+					{/* <motion.span
 						className="absolute bottom-0 right-0 text-4xl"
 						initial={{ opacity: 0, scale: 0 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -51,7 +51,7 @@ export default function Intro() {
 						}}
 					>
 						👍
-					</motion.span>
+					</motion.span> */}
 				</div>
 			</div>
 
@@ -76,7 +76,7 @@ export default function Intro() {
 			>
 				<Link
 					href="/#contact"
-					className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
+					className="group bg-gray-900 text-white px-7 py-3 flex justify-center items-center gap-2 rounded-full
                     outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
 					onClick={() => {
 						setActiveSection('Contact');
@@ -88,7 +88,7 @@ export default function Intro() {
 				</Link>
 
 				<a
-					className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer
+					className="group bg-white px-7 py-3 flex justify-center items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer
                     borderBlack dark:bg-white/10"
 					href="/CV-Halli.pdf"
 					download
@@ -98,7 +98,7 @@ export default function Intro() {
 				</a>
 
 				<a
-					className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer
+					className="bg-white text-gray-700 p-4 flex justify-center items-center gap-2 rounded-full hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer
                     borderBlack dark:bg-white/10 dark:text-white/60"
 					href="https://www.linkedin.com/in/haraldur-ingi-shoshan-14929a117/"
 					target="_blank"
@@ -107,7 +107,7 @@ export default function Intro() {
 				</a>
 
 				<a
-					className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer
+					className="bg-white text-gray-700 p-4 flex justify-center items-center gap-2 rounded-full text-[1.35rem] hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer
                     borderBlack dark:bg-white/10 dark:text-white/60"
 					href="https://github.com"
 					target="_blank"

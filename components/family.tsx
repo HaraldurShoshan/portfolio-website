@@ -1,11 +1,13 @@
 'use client';
-import React, { Fragment } from 'react';
+import React from 'react';
 import SectionHeading from './section-heading';
 import { useSectionInView } from '@/lib/hooks';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import mikaelHinrikImage from '@/public/mikaelHinrik.jpg';
-import fam2 from '@/public/fam2.jpg';
+import fam3 from '@/public/fam3.jpg';
+import mikaelHinrik from '@/public/mikael_hinrik.jpg';
+import mikaelHinrik2 from '@/public/mikaelhinrik2.jpg';
 
 const pic1 = {
 	initial: {
@@ -59,7 +61,7 @@ const pic3 = {
 };
 
 export default function Family() {
-	const { ref } = useSectionInView('Family', 0.8);
+	const { ref } = useSectionInView('Family', 1);
 
 	return (
 		<section
@@ -70,10 +72,12 @@ export default function Family() {
 			<SectionHeading>My Family</SectionHeading>
 			<div className="flex flex-wrap gap-2 justify-center">
 				<motion.div
-					className="relative overflow-hidden border-black/[0.3] rounded-md border min-h-[31rem] min-w-[20rem]"
+					className="relative overflow-hidden rounded-md shadow-xl min-h-[31rem] min-w-[20rem]
+					sm:hover:scale-[1.5] hover:z-10 transition-all"
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
-					transition={{ delay: 0.25, ease: 'easeInOut' }}
+					viewport={{ once: true }}
+					transition={{ ease: 'easeInOut' }}
 				>
 					<Image
 						src={mikaelHinrikImage}
@@ -85,30 +89,50 @@ export default function Family() {
 				</motion.div>
 				<div className="flex flex-col gap-2">
 					<motion.div
-						className="relative overflow-hidden border-black/[0.3] rounded-md border max-h-[10rem] min-h-[10rem] min-w-[20rem] max-w-[20rem] "
+						className="relative overflow-hidden rounded-md shadow-xl max-h-[10rem] min-h-[10rem] min-w-[20rem] max-w-[20rem]
+						sm:hover:scale-[2] hover:z-10 transition-all"
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
-						transition={{ delay: 0.5, ease: 'easeInOut' }}
+						viewport={{ once: true }}
+						transition={{ ease: 'easeInOut' }}
 					>
 						<Image
-							src={fam2}
+							src={fam3}
 							alt="fam2"
 							style={{ maxWidth: 'none', height: 'initial' }}
 							className="absolute -top-3 w-full h-full"
 						></Image>
 					</motion.div>
 					<motion.div
-						className="bg-white/5 border-black/[0.3] rounded-md border max-h-[10rem] min-h-[10rem] min-w-[20rem] max-w-[20rem]"
+						className="relative overflow-hidden rounded-md shadow-xl max-h-[10rem] min-h-[10rem] min-w-[20rem] max-w-[20rem]
+						sm:hover:scale-[2] hover:z-10 transition-all"
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
-						transition={{ delay: 0.75, ease: 'easeInOut' }}
-					></motion.div>
+						viewport={{ once: true }}
+						transition={{ ease: 'easeInOut' }}
+					>
+						<Image
+							src={mikaelHinrik}
+							alt="mikaelHinrik"
+							style={{ maxWidth: 'none', height: 'initial' }}
+							className="absolute -top-5 w-full h-full"
+						></Image>
+					</motion.div>
 					<motion.div
-						className="bg-white/5 border-black/[0.3] rounded-md border max-h-[10rem] min-h-[10rem] min-w-[20rem] max-w-[20rem]"
+						className="relative overflow-hidden rounded-md shadow-xl max-h-[10rem] min-h-[10rem] min-w-[20rem] max-w-[20rem]
+						sm:hover:scale-[2] transition-all"
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
-						transition={{ delay: 1, ease: 'easeInOut' }}
-					></motion.div>
+						viewport={{ once: true }}
+						transition={{ ease: 'easeInOut' }}
+					>
+						<Image
+							src={mikaelHinrik2}
+							alt="mikaelHinrik2"
+							style={{ maxWidth: 'none', height: 'initial' }}
+							className="absolute -top-5 w-full h-full"
+						></Image>
+					</motion.div>
 				</div>
 			</div>
 		</section>

@@ -87,7 +87,7 @@ export const projectsData = [
 	},
 ] as const;
 
-export const skillsData = [
+export const skillsData2 = [
 	'HTML',
 	'CSS',
 	'JavaScript',
@@ -97,14 +97,21 @@ export const skillsData = [
 	'Node.js',
 	'Git',
 	'Tailwind',
-	// 'Prisma',
-	// 'MongoDB',
 	'Redux',
-	// 'GraphQL',
-	// 'Apollo',
-	// 'Express',
-	// 'PostgreSQL',
 	'Python',
-	// 'Django',
 	'Framer Motion',
+] as const;
+
+export const skillsData = [
+	{ name: 'HTML', skillLevel: 4 },
+	{ name: 'CSS', skillLevel: 4 },
+	{ name: 'JavaScript', skillLevel: 4 },
+	{ name: 'TypeScript', skillLevel: 3 },
+	{ name: 'React', skillLevel: 3 },
+	{ name: 'Next.js', skillLevel: 3 },
+	{ name: 'Node.js', skillLevel: 3 },
+	{ name: 'Git', skillLevel: 4 },
+	{ name: 'Tailwind', skillLevel: 3 },
+	{ name: 'Redux', skillLevel: 2 },
+	{ name: 'Framer Motion', skillLevel: 2 },
 ] as const;

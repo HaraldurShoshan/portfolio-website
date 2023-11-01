@@ -4,8 +4,7 @@ import React from 'react';
 import SectionHeading from './section-heading';
 import { skillsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
-import { animate, motion } from 'framer-motion';
-import { init } from 'next/dist/compiled/webpack/webpack';
+import { motion } from 'framer-motion';
 
 const fadeInAnimationVariants = {
 	initial: {
@@ -20,6 +19,29 @@ const fadeInAnimationVariants = {
 		},
 	}),
 };
+
+function renderSkillLevels(skillLevel: number) {
+	const content = [];
+	for (let i = 0; i < 5; i++) {
+		if (skillLevel > i) {
+			content.push(
+				// return your JSX for each skill level here
+				<div
+					key={i}
+					className="bg-gray-200/30 h-2 w-2 rounded-lg border border-gray-200/30"
+				></div>,
+			);
+		} else {
+			content.push(
+				<div
+					key={i}
+					className="h-2 w-2  rounded-lg border border-gray-200/30"
+				></div>,
+			);
+		}
+	}
+	return content;
+}
 
 export default function Skills() {
 	const { ref } = useSectionInView('Skills', 1);
@@ -44,7 +66,13 @@ export default function Skills() {
 						}}
 						custom={index}
 					>
-						{skill}
+						{/* {skill} */}
+						<div className="flex flex-col justify-between">
+							<div className="">{skill.name}</div>
+							<div className="h-5 flex flex-row gap-1 justify-center items-center">
+								{renderSkillLevels(skill.skillLevel)}
+							</div>
+						</div>
 					</motion.li>
 				))}
 			</ul>

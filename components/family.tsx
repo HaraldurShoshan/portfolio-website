@@ -4,10 +4,10 @@ import SectionHeading from './section-heading';
 import { useSectionInView } from '@/lib/hooks';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import mikaelHinrikImage from '@/public/mikaelHinrik.jpg';
+import mikaelHinrikImage from '@/public/mh.jpg';
 import fam3 from '@/public/fam3.jpg';
-import mikaelHinrik from '@/public/mikael_hinrik.jpg';
-import mikaelHinrik2 from '@/public/mikaelhinrik2.jpg';
+import mikaelHinrik from '@/public/mh_second.jpg';
+import mikaelHinrik2 from '@/public/mh_third.jpg';
 
 export default function Family() {
 	const { ref } = useSectionInView('Family', 1);

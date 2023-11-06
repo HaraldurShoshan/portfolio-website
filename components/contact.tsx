@@ -22,13 +22,13 @@ export default function Contact() {
 			transition={{ duration: 1 }}
 			viewport={{ once: true }}
 		>
-			<SectionHeading>Contact me</SectionHeading>
+			<SectionHeading>Hafa samband</SectionHeading>
 			<p className="text-gray-700 -mt-6 dark:text-white/80">
-				Please contact me directly at{' '}
+				Endilega hafðu beint samband við mig í gegnum{' '}
 				<a className="underline" href="mailto:haraldurshoshan@gmail.com">
 					haraldurshoshan@gmail.com
 				</a>{' '}
-				or through this form
+				eða í gegnum formið hér að neðan
 			</p>
 			<form
 				className="mt-10 flex flex-col dark:text-black"
@@ -47,7 +47,7 @@ export default function Contact() {
 					type="email"
 					className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all
 					dark:outline-none"
-					placeholder="Your email"
+					placeholder="Netfangið þitt"
 					required
 					maxLength={500}
 					name="senderEmail"
@@ -55,7 +55,7 @@ export default function Contact() {
 				<textarea
 					className="borderBlack h-52 my-3 rounded-lg p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all
 					dark:outline-none"
-					placeholder="Your message"
+					placeholder="Skilaboð"
 					required
 					maxLength={5000}
 					name="message"

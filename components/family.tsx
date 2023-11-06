@@ -18,7 +18,7 @@ export default function Family() {
 			id="family"
 			className="scroll-mt-28 max-w-[45rem] mb-28 sm:mb-40"
 		>
-			<SectionHeading>My Family</SectionHeading>
+			<SectionHeading>Fjölskyldan mín</SectionHeading>
 			<div className="flex flex-wrap gap-2 justify-center">
 				<motion.div
 					className="relative overflow-hidden rounded-md shadow-xl min-h-[31rem] min-w-[20rem]

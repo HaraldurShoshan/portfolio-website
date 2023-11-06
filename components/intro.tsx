@@ -39,19 +39,6 @@ export default function Intro() {
                     object-cover border-[0.15rem] border-white shadow-2xl"
 						/>
 					</motion.div>
-					{/* <motion.span
-						className="absolute bottom-0 right-0 text-4xl"
-						initial={{ opacity: 0, scale: 0 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{
-							type: 'spring',
-							stiffness: 125,
-							delay: 0.1,
-							duration: 0.7,
-						}}
-					>
-						👍
-					</motion.span> */}
 				</div>
 			</div>
 
@@ -61,11 +48,10 @@ export default function Intro() {
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
 			>
-				<span className="font-bold">Hello, I'm Haraldur.</span> I'm a{' '}
-				<span className="font-bold">full-stack developer</span> with{' '}
-				<span className="font-bold">5 years</span> of experience. I enjoy
-				building <span className="italic">sites & apps</span>. My focus is{' '}
-				<span className="">React (Next.js)</span>.
+				<span className="font-bold">Halló, Ég heiti Haraldur.</span> Ég er{' '}
+				<span className="font-bold">forritari</span> með{' '}
+				<span className="font-bold">5 ára</span> reynslu. Mér finnst mjög gaman
+				að forrita <span className="italic">framenda og bakenda</span>.
 			</motion.h1>
 
 			<motion.div
@@ -83,7 +69,7 @@ export default function Intro() {
 						setTimeOfLastClick(Date.now());
 					}}
 				>
-					Contact me here{' '}
+					Hafðu samband hérna{' '}
 					<BsArrowRight className="opacity-70 group-hover:translate-x-2 transition " />
 				</Link>
 
@@ -93,9 +79,18 @@ export default function Intro() {
 					href="/CV-Halli.pdf"
 					download
 				>
-					Download CV{' '}
+					Ferilskrá{' '}
 					<HiDownload className="opacity-60 group-hover:translate-x-2 transition " />
 				</a>
+				{/* <a
+					className="group bg-white px-7 py-3 flex justify-center items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer
+                    borderBlack dark:bg-white/10"
+					href="/Kynningarbréf.pdf"
+					download
+				>
+					Kynningarbréf{' '}
+					<HiDownload className="opacity-60 group-hover:translate-x-2 transition " />
+				</a> */}
 
 				<a
 					className="bg-white text-gray-700 p-4 flex justify-center items-center gap-2 rounded-full hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer
@@ -106,14 +101,14 @@ export default function Intro() {
 					<BsLinkedin />
 				</a>
 
-				<a
+				{/* <a
 					className="bg-white text-gray-700 p-4 flex justify-center items-center gap-2 rounded-full text-[1.35rem] hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer
                     borderBlack dark:bg-white/10 dark:text-white/60"
 					href="https://github.com"
 					target="_blank"
 				>
 					<FaGithubSquare />
-				</a>
+				</a> */}
 			</motion.div>
 		</section>
 	);

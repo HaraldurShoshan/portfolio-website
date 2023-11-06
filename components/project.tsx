@@ -12,6 +12,8 @@ export default function Project({
 	description,
 	tags,
 	imageUrl,
+	url,
+	displayUrl,
 }: ProjectProps) {
 	const ref = useRef<HTMLDivElement>(null);
 
@@ -42,6 +44,9 @@ export default function Project({
 					<p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
 						{description}
 					</p>
+					<a href={url} target="_blank">
+						{displayUrl}
+					</a>
 					<ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
 						{tags.map((tag, index) => (
 							<li
@@ -58,7 +63,7 @@ export default function Project({
 					src={imageUrl}
 					alt={title}
 					quality={95}
-					className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+					className="absolute hidden sm:block top-8 -right-44 w-[32.25rem] rounded-t-lg shadow-2xl
 					transition
 					group-hover:scale-[1.04] 
 					group-hover:-translate-x-3

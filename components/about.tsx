@@ -17,32 +17,25 @@ export default function About() {
 			transition={{ delay: 0.175 }}
 			id="about"
 		>
-			<SectionHeading>About Me</SectionHeading>
+			<SectionHeading>Um mig</SectionHeading>
 			<p className="mb-3">
-				After graduating with a degree in{' '}
-				<span className="font-medium">Accounting</span>, I decided to pursue my
-				passion for programming. I enrolled in a coding bootcamp and learned{' '}
-				<span className="font-medium">full-stack web development</span>.{' '}
-				<span className="italic">My favorite part of programming</span> is the
-				problem-solving aspect. I <span className="underline">love</span> the
-				feeling of finally figuring out a solution to a problem. My core stack
-				is{' '}
-				<span className="font-medium">
-					React, Next.js, Node.js, and MongoDB
-				</span>
-				. I am also familiar with TypeScript and Prisma. I am always looking to
-				learn new technologies. I am currently looking for a{' '}
-				<span className="font-medium">full-time position</span> as a software
-				developer.
+				Eftir að ég útskrifaðist úr tölvunarfræði við{' '}
+				<span className="font-medium">Háskóla Reykjavíkur</span> 2018 fór ég að
+				vinna í <span className="italic">Sjóvá</span>. Þar var ég aðallega í
+				.Net bakenda forritun. Ég hef einnig mikinn áhuga á{' '}
+				<span className="font-medium">framendaforritun</span>. Ég hef undanfarið
+				verið að kynna mér{' '}
+				<span className="font-bold">React, Next.js, Node.js</span>, einnig hef
+				ég kynnt mér
+				<span className="font-bold"> Typescript</span>. Mér finnst gaman að
+				kynna mér nýja hluti og læra.
 			</p>
 
 			<p>
-				<span className="italic">When I'm not coding</span>, I enjoy playing
-				video games, watching movies, and playing with my dog. I also enjoy{' '}
-				<span className="font-medium">learning new things</span>. I am currently
-				learning about{' '}
-				<span className="font-medium">history and philosophy</span>. I'm also
-				learning how to play the guitar.
+				<span className="italic">Þegar ég er ekki að forrita</span>, hef ég mjög
+				gaman af tölvuleikjum, fótbolta, tónlist og spila ég á bassa í
+				þungarokkshljómsveit. Ég hef einnig mjög gaman af því að teikna. Mér
+				finnst einnig yndislegt að eyða tíma meö fjölskyldunni minni.
 			</p>
 		</motion.section>
 	);

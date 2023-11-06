@@ -1,38 +1,42 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
-import wordanalyticsImg from '@/public/wordanalytics.png';
+import drapaImg from '@/public/drapaWeb.jpg';
 
 export const links = [
 	{
 		name: 'Home',
+		nameIs: 'Heim',
 		hash: '#home',
 	},
 	{
 		name: 'About',
+		nameIs: 'Um mig',
 		hash: '#about',
 	},
 	{
 		name: 'Projects',
+		nameIs: 'Verkefni',
 		hash: '#projects',
 	},
 	{
 		name: 'Skills',
+		nameIs: 'Hæfileikar',
 		hash: '#skills',
 	},
 	{
 		name: 'Experience',
+		nameIs: 'Reynsla',
 		hash: '#experience',
 	},
 	{
 		name: 'Family',
+		nameIs: 'Fjölskylda',
 		hash: '#family',
 	},
 	{
 		name: 'Contact',
+		nameIs: 'Hafa samband',
 		hash: '#contact',
 	},
 ] as const;
@@ -41,70 +45,53 @@ export const experiencesData = [
 	{
 		title: 'Sjóvá',
 		location: 'Reykjavík, Ísland',
-		description: 'Ég vann sem bakendaforritari',
+		description:
+			'Ég byrjaði að vinna í Sjóvá í júlí 2018, strax eftir að ég útskrifaðist úr HR. Vinnan mín fólst í því að sinna innra kerfi starfsmanna og var ég þá aðallega að vinna í bakenda.',
 		icon: React.createElement(CgWorkAlt),
+		images: [],
 		date: '2018 - 2023',
 	},
 	{
 		title: 'Háskólinn í Reykjavík',
 		location: 'Reykjavík, Ísland',
 		description:
-			'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+			'Byrjaði árið 2015 og útskrifaðist árið 2018 með BS gráðu í tölvunarfræði. Þar lærði ég m.a. um forritun, SQL forritun, vefhönnun og margt fleira.',
 		icon: React.createElement(LuGraduationCap),
+		images: [
+			{ name: 'Skírteini', imagePath: '/HR_certificate.jpg' },
+			{ name: 'Einkunnir', imagePath: '/HR_grades.jpg' },
+		],
 		date: '2015-2018',
 	},
 	{
 		title: 'Margmiðlunarskólinn',
 		location: 'Reykjavík',
 		description:
-			'Ég kláraði 2. ára diploma nám í Margmiðlunarskólanum, þar lærði ég meðal annars á öll helstu margmiðlunarforrit eins og t.d.',
+			'Ég kláraði 2. ára diploma nám í Margmiðlunarskólanum, þar lærði ég meðal annars á öll helstu margmiðlunarforrit eins og t.d.' +
+			' Photoshop, After effects, Premiere pro, Illustrator, 3ds Max og margt fleira.',
 		icon: React.createElement(LuGraduationCap),
+		images: [],
 		date: '2009-2011',
 	},
 ] as const;
 
 export const projectsData = [
 	{
-		title: 'CorpComment',
+		title: 'Drápa ',
 		description:
-			'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-		tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-		imageUrl: corpcommentImg,
+			'Bjó til heimasíður fyrir hljómsveitina mína. Notaði React og Next.js til að búa til síðurnar. Notaði Tailwind til að stíla.',
+		tags: ['React', 'Next.js', 'Tailwind'],
+		url: 'http://drapamusic.com',
+		displayUrl: 'drapamusic.com',
+		imageUrl: drapaImg,
 	},
-	{
-		title: 'rmtDev',
-		description:
-			'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-		imageUrl: rmtdevImg,
-	},
-	{
-		title: 'Word Analytics',
-		description:
-			'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-		tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-		imageUrl: wordanalyticsImg,
-	},
-] as const;
-
-export const skillsData2 = [
-	'HTML',
-	'CSS',
-	'JavaScript',
-	'TypeScript',
-	'React',
-	'Next.js',
-	'Node.js',
-	'Git',
-	'Tailwind',
-	'Redux',
-	'Python',
-	'Framer Motion',
 ] as const;
 
 export const skillsData = [
 	{ name: 'HTML', skillLevel: 4 },
 	{ name: 'CSS', skillLevel: 4 },
+	{ name: 'SQL', skillLevel: 3 },
+	{ name: 'Angular 2+', skillLevel: 3 },
 	{ name: 'JavaScript', skillLevel: 4 },
 	{ name: 'TypeScript', skillLevel: 3 },
 	{ name: 'React', skillLevel: 3 },
@@ -114,4 +101,6 @@ export const skillsData = [
 	{ name: 'Tailwind', skillLevel: 3 },
 	{ name: 'Redux', skillLevel: 2 },
 	{ name: 'Framer Motion', skillLevel: 2 },
+	{ name: '.Net', skillLevel: 4 },
+	{ name: 'C#', skillLevel: 4 },
 ] as const;

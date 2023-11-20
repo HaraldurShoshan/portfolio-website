@@ -50,8 +50,7 @@ export default function Intro() {
 			>
 				<span className="font-bold">Halló, Ég heiti Haraldur.</span> Ég er{' '}
 				<span className="font-bold">forritari</span> með{' '}
-				<span className="font-bold">5 ára</span> reynslu. Mér finnst mjög gaman
-				að forrita <span className="italic">framenda og bakenda</span>.
+				<span className="font-bold">5 ára</span> reynslu.
 			</motion.h1>
 
 			<motion.div

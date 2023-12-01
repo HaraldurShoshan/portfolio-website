@@ -69,9 +69,9 @@ export default function Skills() {
 						{/* {skill} */}
 						<div className="flex flex-col justify-between">
 							<div className="">{skill.name}</div>
-							<div className="h-5 flex flex-row gap-1 justify-center items-center">
+							{/* <div className="h-5 flex flex-row gap-1 justify-center items-center">
 								{renderSkillLevels(skill.skillLevel)}
-							</div>
+							</div> */}
 						</div>
 					</motion.li>
 				))}

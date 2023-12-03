@@ -4,11 +4,11 @@ import { LuGraduationCap } from 'react-icons/lu';
 import drapaImg from '@/public/drapaWeb.jpg';
 
 export const links = [
-	{
-		name: 'Home',
-		nameIs: 'Heim',
-		hash: '#home',
-	},
+	// {
+	// 	name: 'Home',
+	// 	nameIs: 'Heim',
+	// 	hash: '#home',
+	// },
 	{
 		name: 'About',
 		nameIs: 'Um mig',
@@ -88,19 +88,19 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+	{ name: '.Net', skillLevel: 4 },
+	{ name: 'C#', skillLevel: 4 },
+	{ name: 'SQL', skillLevel: 3 },
 	{ name: 'HTML', skillLevel: 4 },
 	{ name: 'CSS', skillLevel: 4 },
-	{ name: 'SQL', skillLevel: 3 },
+	{ name: 'React', skillLevel: 3 },
+	{ name: 'Next.js', skillLevel: 3 },
+	{ name: 'Redux', skillLevel: 2 },
+	{ name: 'Framer Motion', skillLevel: 2 },
+	{ name: 'Tailwind', skillLevel: 3 },
 	{ name: 'Angular 2+', skillLevel: 3 },
 	{ name: 'JavaScript', skillLevel: 4 },
 	{ name: 'TypeScript', skillLevel: 3 },
-	{ name: 'React', skillLevel: 3 },
-	{ name: 'Next.js', skillLevel: 3 },
 	{ name: 'Node.js', skillLevel: 3 },
 	{ name: 'Git', skillLevel: 4 },
-	{ name: 'Tailwind', skillLevel: 3 },
-	{ name: 'Redux', skillLevel: 2 },
-	{ name: 'Framer Motion', skillLevel: 2 },
-	{ name: '.Net', skillLevel: 4 },
-	{ name: 'C#', skillLevel: 4 },
 ] as const;

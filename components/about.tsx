@@ -2,9 +2,9 @@
 import React from 'react';
 import SectionHeading from './section-heading';
 import { motion } from 'framer-motion';
-
+import portfolioImage from '@/public/Halli_portfolio_image.jpg';
 import { useSectionInView } from '@/lib/hooks';
-
+import Image from 'next/image';
 export default function About() {
 	const { ref } = useSectionInView('About');
 
@@ -17,7 +17,26 @@ export default function About() {
 			transition={{ delay: 0.175 }}
 			id="about"
 		>
-			<SectionHeading>Um mig</SectionHeading>
+			<div className="flex items-center justify-center mb-10">
+				<div className="relative">
+					<motion.div
+						initial={{ opacity: 0, scale: 0 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{
+							type: 'tween',
+							duration: 0.2,
+						}}
+					>
+						<Image
+							src={portfolioImage}
+							alt="image_portfolio"
+							className="h-[13rem] w-[13rem] rounded-full
+                    object-cover border-[0.15rem] border-white shadow-2xl"
+						/>
+					</motion.div>
+				</div>
+			</div>
+			<SectionHeading>Haraldur Ingi Shoshan</SectionHeading>
 			<p className="mb-3">
 				Eftir að ég útskrifaðist úr tölvunarfræði við{' '}
 				<span className="font-medium">Háskóla Reykjavíkur</span> 2018 fór ég að
